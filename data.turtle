@@ -1,0 +1,98 @@
+@prefix gzo: <http://gezr.com/> .
+@prefix gzp: <http://gezr.com/Property/> .
+@prefix gzi: <http://gezr.com/Instance> .
+
+
+:Alex rdf:type :Child ;
+    :hasInterest (:ants, :cars) ;
+    :hasHobby (:fotbal :carting) ;
+    :hasCharacteristics (:romanian, :male, :kindergarden);
+    :livesAt :Sibiu .
+
+
+:David rdf:type :Child ;
+    :hasInterest (:math) ;
+    :hasHobby (:fishing) ;
+    :hasCharacteristics (:romanian, :male, :bachelorsDegree);
+    :livesAt :Iasi .
+
+:Hendrik rdf:type :Child ;
+    :hasInterest (:cars) ;
+    :hasHobby (:videoGames) ;
+    :hasCharacteristics (:german, :male, :primary);
+    :livesAt :Berlin.
+
+
+:carting rdf:type :Hobby .
+:fotbal rdf:type :CompetitiveHobby .
+:fishing rdf:type :Hobby .
+:guitar rdf:type :Hobby .
+:videoGames rdf:type :Hobby .
+:cooking rdf:type :Hobby .
+:writing rdf:type :Hobby .
+
+
+:ants rdf:type :Domain .
+:cars rdf:type :Domain .
+:fishing rdf:type :Domain .
+:fashion rdf:type :Domain .
+:math rdf:type :Domain .
+:astrology rdf:type :Domain .
+:physics rdf:type :Domain .
+:medicine rdf:type :Domain .
+
+
+:romanian rdf:type :Nationality .
+:russian rdf:type :Nationality .
+:french rdf:type :Nationality .
+:german rdf:type :Nationality .
+
+
+:male rdf:type :Gender .
+:female rdf:type :Gender .
+
+
+:kindergarden rdf:type :EducationLevel ;
+    description "" .
+:primary rdf:type :EducationLevel ;
+    description "Classes 1-4" .
+:highSchool rdf:type :EducationLevel ;
+    description "High school" .
+:bachelorsDegree rdf:type :EducationLevel ;
+    description "College or University" .
+:mastersDegree rdf:type :EducationLevel ;
+    description "Long term studies" .
+
+
+:quarantine rdf:type :CovidWarning .
+:curfew rdf:type :CovidWarning .
+
+
+:Sibiu rdf:type :location ;
+    :hasWarning :quarantine .
+:Iasi rdf:type :location ;
+:Berlin rdf:type :location ;
+:Hamburg rdf:type :location ;
+    :hasWarning :curfew ;
+:Paris rdf:type :location ;
+:London rdf:type :location ;
+:Tokyo rdf:type :location ;
+
+
+:toyVwCar rdf:type :Product ;
+    description "small toy volkswagen car" ;
+    :isRelatedTo :cars ;
+    :foundAt :Hamburg .
+
+:redCar rdf:type :Product ;
+    description "small red car" ;
+    :isRelatedTo :cars ;
+    :isUsedFor :carting .
+
+:fishingRod rdf:type :Product ;
+    description "Used for catching fish" ;
+    :isRelatedTo :fishing .
+    :isUsedFor :fishing .
+
+:footbalBall rdf:type :Product ;
+    :isUsedFor :fotbal .
