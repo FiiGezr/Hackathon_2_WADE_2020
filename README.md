@@ -40,6 +40,10 @@ Sketch a 🦉conceptual model helping 🎅 to choose the right 🎁 – i.e. �
 * foundAt - Domain: Product. Range: Location. Indicates that a product can be bought/order from a geographical location.
 * takesPlaceAt - Domain: Experience. Range: Location. Indicates that an experience is happening at a geographical location. (e.g. Horse riding at the horse paddock)
 * hasWarning - Domain: Location. Range: Warning. Indicates that there are certain warnings/measures of safety taken at a geographical location.
+
+### Use Case
+Santa wants to use our conceptual model in order to choose a gift for a child.
+Let's say the child is Hendrik, he is a 10 year old German kid. He is really interested in cars. Santa sees that a gift related to Hendrik's domain of interest is a car, but because Hendrik is just 10 (he doesn't have the ability or legal right to drive) Santa will buy him a toy car instead of a real one. Because Hendrik is also German, Santa can think that Hendrik will like a German car as a gift, so Santa will buy a Volkswagen. The toy car that Santa wants to buy is found at a shop in a certain location, and because Santa also knows Hendrik's location he can calculate the amount of time he needs to get from the shop to Hendrik and can also check the weather warnings for both locations and the road conditions between them. Santa also sees that Hendrik's location has a curfew imposed by the authorities (because the location has a COVID warning) so Santa needs to deliver the gift before 21:00 or else he risks being fined by the police.
 # Involvement of team members
 * Baisan Razvan
   * visual representation of the conceptual model
